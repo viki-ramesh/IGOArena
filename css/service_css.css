@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+:root {
+    --background-color: #101012;
+    --cards-color: #141414;
+    --border-radius: 7px;
+    --theme-color: #F24A00;
+    --shadow: 2px 2px 7px #0000005b;
+}
+
+@font-face {
+    font-family: bBigerOver;
+    src: url(fonts/bBigerOver.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    box-sizing: border-box
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    letter-spacing: 3px;
+}
+
+
+
+.nav {
+    box-shadow: var(--shadow);
+    display: none;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--cards-color);
+
+}
+
+.nav-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+
+.nav-logo img {
+    width: 150px;
+    height: 30px;
+}
+
+.nav-itmes {
+    flex: 5;
+    display: flex;
+    margin-right: 60px;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.nav-itmes ul li a {
+    font-family: bBigerOver;
+
+}
+
+.nav-itmes ul {
+    gap: 40px;
+    display: flex;
+
+}
+
+
+
+.main {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.info-view {
+    display: none;
+    height: 400px;
+    background-color: var(--cards-color);
+    border-radius: var(--border-radius);
+    background-image: url('../images/info_back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.info-layer {
+    display: flex;
+    height: 400px;
+    background: #16161670;
+    border-radius: var(--border-radius);
+
+}
+
+.info-text {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info-text h1 {
+
+    width: 450px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    color: white;
+    font-family: bBigerOver;
+}
+
+.logo-div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo-div img {
+    height: 100px;
+    width: 500px;
+}
+
+.upcoming-events {
+    display: none;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.slideshow-events {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.mySlides {
+    box-shadow: var(--shadow);
+    width: 300px;
+    height: 150px;
+    background-image: url('../images/planet_mojo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
+}
+
+.slide-layer {
+
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    background: #16161696;
+    border-radius: var(--border-radius);
+}
+
+
+
+
+
+.svg-event-div {
+
+    display: flex;
+    background-image: url("data:image/svg+xml,%3Csvg class='svg-event' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 41.078'%3E%3Cpath id='Path_2' data-name='Path 2' d='M510 0H0V41.078H300.833l26.09-34.486H510Z' fill='%23f24a00'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 7px 7px 0 0;
+    padding: 0;
+    margin: 0;
+    max-height: max-content;
+
+}
+
+.svg-event-div h4 {
+    height: max-content;
+    padding: 0;
+    margin: 2px 0 0 5px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+    max-width: 175px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+}
+
+
+.event-info {
+    flex: 2;
+    margin: 5px 0 0 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+
+
+}
+
+.event-info h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.join-event {
+    flex: 1;
+    padding: 5px;
+}
+
+.join-event button {
+
+    width: 130px;
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--theme-color);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.join-event img {
+    width: 22px;
+    height: 22px;
+}
+
+.upcoming-igo {
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.trending-igo {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+
+
+}
+
+.trending-1 {
+    height: 450px;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    background-color: var(--cards-color);
+    background-image: url('../images/trendinf-igo-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.trending-2 {
+
+    height: 450px;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    background-color: var(--cards-color);
+    background-image: url('../images/trendinf-igo-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.trending-3 {
+
+    height: 450px;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    background-color: var(--cards-color);
+    background-image: url('../images/trendinf-igo-3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.trending-status h3 {
+    background-color: var(--theme-color);
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.trending-igo-info {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    border-radius: 0 0 7px 7px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+.igo-name {
+
+    padding: 0;
+    margin: 0 0 0 10px;
+    min-height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.igo-views {
+    min-height: 30%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+    gap: 8px;
+
+}
+
+
+.igo-rating {
+    min-height: 30%;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 0 10px;
+    gap: 5px;
+}
+
+.igo-views h4 {
+    font-weight: 400;
+}
+
+.views-img {
+    width: 20px;
+    height: 20px;
+}
+
+.all-igo-list {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+
+.list-div-1 {
+    width: 100%;
+    height: 80px;
+    background-color: var(--cards-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 15px;
+    display: flex;
+    gap: 5px;
+}
+
+.list-div-1 h3,
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.list-div-1 h3 {
+    font-weight: 400;
+}
+
+.list-div-1 h5 {
+    font-weight: 100;
+    color: #757575;
+}
+
+
+.list-logo {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-name {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+}
+
+
+.list-raise {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+
+}
+
+.list-marketcap {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+     align-items: center;
+}
+
+.list-views {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.list-tokentype {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.list-rating {
+    flex: 2.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 3px;
+}
+
+
+.list-logo-img {
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.list-name h3 {
+    max-width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.list-raise h5,
+h3 {
+    max-width: 180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.list-raise h5,
+.list-marketcap h5,
+.list-views h5,
+.list-tokentype h5 {
+    margin-bottom: 5px;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    /* for mobile device */
+
+    .trending-igo {
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+
+    }
+
+    .trending-1,
+    .trending-2,
+    .trending-3 {
+        height: 300px;
+
+    }
+
+    .trending-igo-info {
+        width: 100%;
+        height: 40%;
+
+    }
+
+    .list-div-1 {
+        height: 50px;
+    }
+
+
+    .list-div-1 h3 {
+        font-size: 10px;
+    }
+    
+    .list-div-1 h5 {
+        font-size: 8px;
+    }
+
+
+
+    .list-logo-img {
+        border-radius: 5px;
+        height: 30px;
+        width: 30px;
+        object-fit: cover;
+    }
+
+    .list-logo {
+        flex: 1;
+        
+    }
+    
+    .list-rating img {
+        height: 10px;
+        width: 10px;
+    }
+}
